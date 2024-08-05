@@ -10,6 +10,7 @@ public class LibraryManagementContext {
 		 ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 	        BookService bookService = (BookService) context.getBean("bookService");
 	        bookService.addBook();
+	        System.out.println("Logging aspect is working. Check the console for method execution times.");
 	    
 	}
 
